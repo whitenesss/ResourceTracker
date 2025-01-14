@@ -1,9 +1,9 @@
-
+import sys
 import psutil
 import sqlite3
 from PyQt5.QtCore import QCoreApplication
 from PyQt5.QtWidgets import (
- QMainWindow, QVBoxLayout, QPushButton, QLabel, QWidget,
+    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QWidget,
     QSpinBox, QTableWidget, QTableWidgetItem, QDialog
 )
 from PyQt5.QtCore import QTimer
@@ -166,4 +166,8 @@ class MainWindow(QMainWindow):
         self.db_writer.wait()
         event.accept()
 
-
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
