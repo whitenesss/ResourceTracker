@@ -99,7 +99,6 @@ def test_empty_data_load(history_window):
 
 def test_update_timer(main_window):
     """Проверка работы метода update_timer"""
-
     seconds = 120
     main_window.update_timer(seconds)
     assert main_window.timer_label.text() == f"Recording time: {seconds}s"
