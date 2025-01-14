@@ -1,4 +1,10 @@
+coverage==7.6.10
+iniconfig==2.0.0
+packaging==24.2
+pluggy==1.5.0
 psutil==6.1.1
 PyQt5==5.15.11
 PyQt5-Qt5==5.15.16
 PyQt5_sip==12.16.1
+pytest==8.3.4
+pytest-qt==4.4.0
